@@ -1,94 +1,150 @@
-# M-STAT V1.0
+# 🖥️ M-STAT V1.0
 
-### System & Network Monitoring and Diagnostic Tool
+### 🔍 System & Network Monitoring and Diagnostic Tool
 
-M-STAT is a Python based terminal application designed to monitor system resources and network conditions from a single interface. It combines system monitoring, process analysis, network information, speed testing, and diagnostic analysis.
+M-STAT is a Python-based terminal application designed to help users quickly understand what is happening on their computer and network.
 
-## Problem Statement
+Instead of switching between multiple Windows utilities, M-STAT brings several useful monitoring and diagnostic features together in one simple terminal interface.
 
-When a computer becomes slow or the internet connection becomes unstable, users often need to check multiple tools to identify the cause. M-STAT provides these checks through one lightweight terminal based application.
+---
 
-## Objectives
+## 🎯 Problem Statement
 
-- Monitor CPU, RAM, and storage usage.
-- Identify processes using high CPU resources.
-- Display important network information.
-- Test internet download and upload speeds.
-- Check ping latency and packet loss.
-- Provide an overall system and network diagnostic.
+When a computer becomes slow or the internet connection becomes unstable, users often need to check multiple tools to identify the cause.
 
-## Features
+M-STAT provides these checks through one lightweight terminal-based application.
 
-### Quick Diagnostic
-Performs a combined check of system resources, top processes, internet connectivity, ping, and packet loss, then provides an overall status.
+---
 
-### System Monitor
-Displays current CPU, RAM, and storage usage.
+## 🚀 Features
 
-### Process Monitor
-Displays the top CPU-consuming processes with their PID and CPU usage.
+### 🩺 Quick Diagnostic
 
-### Network Monitor
-Displays the connected WiFi network, IP address, DNS server, current network traffic, internet speed, and ping.
+Runs several checks together:
 
-### Health Analyzer
-Classifies system resource usage as NORMAL, WARNING, or HIGH.
+- 🧠 CPU usage
+- 💾 RAM usage
+- 💿 Storage usage
+- ⚙️ Top CPU-consuming process
+- 🌐 Network connectivity
+- 📡 Ping latency
+- 📦 Packet loss
+- 📊 Overall diagnostic status
 
-### Live Monitor
-Continuously displays changing system resource information.
+### 🖥️ System Monitor
 
-## Technologies Used
+Displays:
 
-- Python
-- psutil
-- speedtest-cli
-- Windows networking utilities
+- CPU usage
+- RAM usage
+- Storage usage
 
-## Project Structure
-M-STAT/
-├── main.py
-├── system_monitor.py
-├── process_monitor.py
-├── network_monitor.py
-├── diagnostics.py
-├── health_analyzer.py
-├── live_monitor.py
-└── README.md
+### ⚙️ Process Monitor
 
-## Installation
+Shows the top CPU-consuming processes along with:
 
-Install the required packages:
-pip install psutil speedtest-cli
+- Process ID (PID)
+- Process name
+- CPU usage
 
-## Running the Project
+### 🌐 Network Monitor
 
-Run the application using:
-python main.py
+Displays:
 
-The main menu provides access to all monitoring and diagnostic modules.
+- 💻 Computer name
+- 📶 Connected Wi-Fi network
+- 🌍 IP address
+- 🔐 DNS server
+- 📥 Current download traffic
+- 📤 Current upload traffic
+- 🚀 Internet download speed
+- 🚀 Internet upload speed
 
-## Testing
+### ❤️ Health Analyzer
 
-Each major module has been tested through the main application, including system monitoring, process monitoring, network monitoring, speed testing, health analysis, quick diagnostics, and live monitoring.
+Classifies system resource usage into:
 
-## Demo
+- 🟢 NORMAL
+- 🟡 WARNING
+- 🔴 HIGH
 
-M-STAT can be demonstrated through the following workflow:
+### 📈 Live Monitor
 
-1. Launch the application using `python main.py`.
-2. Run Quick Diagnostic to check overall system and network conditions.
-3. View CPU, RAM, and storage information.
-4. Analyze the top CPU-consuming processes.
-5. Check network information and run an internet speed test.
-6. View the system health analysis.
-7. Run Live Monitor to observe changing system resources.
+Continuously displays changing system information including:
 
-A demonstration video and screenshots can be included with the project submission.
+- CPU usage
+- RAM usage
+- Disk activity
+- Storage usage
 
-## Future Enhancements
+Press `Ctrl + C` to stop the live monitor.
 
-Diagnostic history and logging
-Exportable diagnostic reports
-Additional network diagnostics
-More detailed process analysis
-Cross-platform support
+---
+
+# 📸 Screenshots
+
+## 🏠 Main Menu
+
+![M-STAT Main Menu](screenshots/Main%20menu.png)
+
+## 🩺 Quick Diagnostic
+
+![Quick Diagnostic](screenshots/quick_diagnostic.png)
+
+## 🖥️ System Monitor
+
+![System Monitor](screenshots/system_monitor.png)
+
+## ⚙️ Process Monitor
+
+![Process Monitor](screenshots/process_monitor.png)
+
+## 🌐 Network Monitor
+
+![Network Monitor](screenshots/network_monitor.png)
+
+## ❤️ Health Analyzer
+
+![Health Analyzer](screenshots/system_health.png)
+
+## 📈 Live Monitor
+
+![Live Monitor](screenshots/M-STAT_Live.png)
+
+---
+
+# 🛠️ Technologies Used
+
+- 🐍 Python
+- 📊 psutil
+- 🚀 speedtest-cli
+- 🪟 Windows networking utilities
+
+---
+
+# 📁 Project Structure
+
+```text
+M-STAT-V1.0/
+|
+|-- main.py
+|-- diagnostics.py
+|-- health_analyzer.py
+|-- live_monitor.py
+|-- network_monitor.py
+|-- process_monitor.py
+|-- system_monitor.py
+|
+|-- README.md
+|-- statement.md
+|-- requirements.txt
+|-- run.bat
+|
+`-- screenshots/
+    |-- Main menu.png
+    |-- M-STAT_Live.png
+    |-- network_monitor.png
+    |-- process_monitor.png
+    |-- quick_diagnostic.png
+    |-- system_health.png
+    `-- system_monitor.png
